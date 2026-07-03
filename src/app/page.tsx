@@ -5,7 +5,7 @@ import HeroSection from "@/components/HeroSection";
 import CuisineCarousel from "@/components/CuisineCarousel";
 import { Star, Clock, Sparkles, ArrowRight } from "lucide-react";
 
-export const revalidate = 3600; // Cache page for 1 hour
+export const dynamic = "force-dynamic";
 
 async function getTopRestaurants() {
   try {

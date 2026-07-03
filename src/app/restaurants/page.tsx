@@ -2,8 +2,7 @@ import React, { Suspense } from "react";
 import { db } from "@/lib/db";
 import RestaurantsCatalog from "@/components/RestaurantsCatalog";
 
-// Revalidate this page dynamically or cache for 5 minutes
-export const revalidate = 300;
+export const dynamic = "force-dynamic";
 
 async function getAllRestaurants() {
   try {
